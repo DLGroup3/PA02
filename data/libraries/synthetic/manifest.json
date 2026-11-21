@@ -1,0 +1,58 @@
+{
+  "generator_version": "synth-1.1",
+  "seed": 20261114,
+  "params": {
+    "scenarios": 30,
+    "users": 3000,
+    "sessions": 165000,
+    "seed": 20261114
+  },
+  "session_chunk": 1000,
+  "feature_registry_version": "features-1",
+  "libraries": [
+    "yongin-bora",
+    "yongin-dongbaek",
+    "yongin-giheung",
+    "yongin-heungdeok",
+    "yongin-jukjeon",
+    "yongin-pogok",
+    "yongin-sanghyeon",
+    "yongin-suji",
+    "yongin-seonong",
+    "seongnam-central",
+    "nl-digital"
+  ],
+  "room_units": 24,
+  "counts": {
+    "synth_scenarios": 720,
+    "synth_seat_env": 63330,
+    "synth_users": 3000,
+    "synth_sessions": 163306,
+    "synth_events": 444297
+  },
+  "period": {
+    "start": "2026-06-26",
+    "end": "2026-11-14",
+    "days": 141,
+    "scheduled_visits": 164750,
+    "season_of_month": {
+      "12": "winter",
+      "1": "winter",
+      "2": "winter",
+      "6": "summer",
+      "7": "summer",
+      "8": "summer"
+    },
+    "default_season": "spring_fall"
+  },
+  "assumptions": {
+    "seat_button_side_m": 0.75,
+    "time_slots_hour": {
+      "morning": 10,
+      "noon": 13,
+      "evening": 19
+    },
+    "note": "모든 환경 객체·측정값·사용자·이벤트는 합성. 실좌석 좌표/ID와 같은 지도에 있는 실제 출입구·화장실 후보만 실데이터에서 가져옴(origin 필드)."
+  },
+  "generated_at": "2026-11-15T10:35:24.855989+09:00"
+}

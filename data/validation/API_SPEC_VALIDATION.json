@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "specVersion": "2.0.0-design",
+  "validatedExamples": 77,
+  "checks": [
+    "MODEL_API.openapi.json: OpenAPI 3.1.1 구조 검증 통과",
+    "MODEL_API.openapi.json: 요청·응답 예시 73개 JSON Schema 검증",
+    "BACKEND_SEATS_API.openapi.json: OpenAPI 3.1.1 구조 검증 통과",
+    "BACKEND_SEATS_API.openapi.json: 요청·응답 예시 4개 JSON Schema 검증",
+    "거절 입력 10종 확인: 실시간 특성을 정적 features 에 넣음, 이진 특성 target=0.5, 미등록 preference source, 탐색 비율 0.3 초과, 미등록 verification, M10 preview 모드, M10 빈 choiceSet, M10 관측 200개 초과, M09 preferences 누락, M09 confidence 범위 밖",
+    "simulation 좌석 예시: 학습 프로필+실시간 특성으로 6.2절 점수·순위 재계산 일치, snapshotId 단일",
+    "M09: 표·예시 어휘 동치(yes=uses_laptop), avoid_direct_airflow→airflow 0 direct, height_adjustable→unmapped, 응답 예시=참조 구현 결과",
+    "M10: 제외 관측(선택지 1개) 반영 observationsUsed, 근거 요약 chosenRate·availableRate 재계산 일치, locked 불변, 선택 좌석⊂choiceSet",
+    "Markdown JSON 예시 25개 파싱/내부 링크/모델 10+백엔드 13개 섹션 확인"
+  ],
+  "failures": [],
+  "skipped": [],
+  "limitations": [
+    "API 서버·추천 엔진·M10 학습 모델은 미구현. 예시의 학습값은 형식 예시이며 모델 출력이 아니다.",
+    "합성(DEMO·SIM) 예시와 계산식만 검사했다. 실환경 현황 연동·추천 품질·성능을 입증하지 않는다."
+  ],
+  "데이터기준일자": "2026-11-15"
+}
